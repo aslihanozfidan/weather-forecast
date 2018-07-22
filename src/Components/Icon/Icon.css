@@ -1,0 +1,33 @@
+.icon {
+    position: fixed;
+    top: calc(50% - 80px);
+    left: calc(50% - 100px);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 9;
+}
+
+.icon .weather-icon {
+    height: 200px;
+    animation: iconDance 5s ease infinite alternate;
+}
+
+/* Clouds */
+
+.bg-clouds {
+    background-color: #008adb;
+}
+
+.color-clouds {
+    color: #212121;
+}
+
+@keyframes iconDance {   
+    0% {
+        transform: translate(250px, 50px);
+    }
+    100% {
+        transform: translate(-250px, -50px);
+    }
+}
