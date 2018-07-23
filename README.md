@@ -2,11 +2,11 @@
 
 A local weather app in React.
 
-# Setup
+## Setup
 
 npm install
 
 npm start
 
-# Updating to New Releases
+## Updating to New Releases
 
