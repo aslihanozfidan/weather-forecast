@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className={`app bg-${this.state.weather.toLocaleLowerCase()}`}>
       {this.state.weather !== "" ?
-       <Header weatherLocation={this.state.cityAndCountry} /> :
+       <Header weatherLocation={this.state.cityAndCountry} weatherStatus={this.state.weather} /> :
        ""
       }
        

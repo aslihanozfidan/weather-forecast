@@ -14,5 +14,41 @@ ul {
 .loading-icon {
   position: fixed;
   top: 50%;
-  height: 50px;
+  left: calc(50% - 40px);
+  height: 80px;
+}
+
+/* Clouds */
+
+.icon .weather-icon-clouds {
+  height: 200px;
+  animation: iconDance 5s ease infinite alternate;
+}
+
+.bg-clouds {
+  background-color: #008adb;
+}
+
+.color-clouds {
+  color: #212121;
+}
+
+/* Thunderstorm */
+
+.icon .weather-icon-thunderstorm {
+  height: 200px;
+  animation: iconElectric 2s linear infinite alternate;
+}
+
+.bg-thunderstorm {
+  background-color: #212121;
+  animation: iconElectric 2s linear infinite alternate;
+}
+
+.color-thunderstorm {
+  color: #ffffff;
+}
+
+.app-header.color-thunderstorm {
+  border-color: #ffffff;
 }
