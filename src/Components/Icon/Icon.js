@@ -6,7 +6,7 @@ class Icon extends Component {
     return (
       <div className={`icon color-${this.props.weatherStatus.toLocaleLowerCase()}`}>
         {this.props.weatherStatus !== "" ?
-          <img src={require(`../../Images/${this.props.weatherStatus}.svg`)} className="weather-icon" alt={this.props.weatherStatus} />
+          <img src={require(`../../Images/${this.props.weatherStatus}.svg`)} className={`weather-icon-${this.props.weatherStatus.toLocaleLowerCase()}`} alt={this.props.weatherStatus} />
           :
           <img src={require(`../../Images/loading.gif`)} className="loading-icon" alt={this.props.weatherStatus} />
         }

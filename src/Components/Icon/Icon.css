@@ -8,12 +8,12 @@
     z-index: 9;
 }
 
-.icon .weather-icon {
+/* Clouds */
+
+.icon .weather-icon-clouds {
     height: 200px;
     animation: iconDance 5s ease infinite alternate;
 }
-
-/* Clouds */
 
 .bg-clouds {
     background-color: #008adb;
@@ -23,11 +23,39 @@
     color: #212121;
 }
 
+/* Thunderstorm */
+
+.icon .weather-icon-thunderstorm {
+    height: 200px;
+    animation: iconElectric 2s linear infinite alternate;
+}
+
+.bg-thunderstorm {
+    background-color: #212121;
+    animation: iconElectric 2s linear infinite alternate;
+}
+
+.color-thunderstorm {
+    color: #ffffff;
+}
+
 @keyframes iconDance {   
     0% {
         transform: translate(250px, 50px);
     }
     100% {
         transform: translate(-250px, -50px);
+    }
+}
+
+@keyframes iconElectric {   
+    0% {
+        opacity: 1; 
+    }
+    40% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0.3;
     }
 }
