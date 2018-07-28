@@ -4,11 +4,3 @@
   height: 100%;
   text-align: center;
 }
-
-.app-header {
-  position: absolute;
-  top: 0px;
-  height: 80px;
-  width: 100%;
-  z-index: 9;
-}
